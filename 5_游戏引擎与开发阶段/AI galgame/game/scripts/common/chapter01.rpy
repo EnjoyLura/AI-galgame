@@ -15,7 +15,7 @@ label c01_s001_yuma_room_wakeup:
     "也正因为太平静，才更有压迫感。"
     # [SE] 轻轻敲门
     y "小春，等一下。"
-    show haru 微笑 at center with dissolve
+    show haru 微笑 at center with sprite_enter
     haru 微笑 "哥哥，早上好。"
     haru "现在清醒了吗？"
     y "……你已经进来了啊。"
@@ -156,7 +156,7 @@ label c01_s001_yuma_room_wakeup:
     "楼下传来味噌汤的香气。"
     "（七年了啊。）"
     "（算了，先吃早饭吧。）"
-    hide haru with dissolve
+    hide haru with sprite_exit
     jump c01_s002_kitchen_breakfast
 
     scene black with fade
